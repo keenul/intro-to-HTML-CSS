@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Keenul's web programming experience">
+        <meta name="keywords" content="html, css, web programming">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <title>Keenul's Projects</title>
+    </head> 
+    <body>
+        <header>
+            <div class="header-container">
+            <h1>Keenul's Web Programming Experience</h1>
+            <h2>{Survey}</h2>
+            <p>/* Fill out and submit the survey below to give feedback to Keenul! */</p>
+            </div>  
+            <nav>
+                <ul class="flex_nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="practices.html">ITSE Practices</a></li>
+                    <li><a href="labs.html">ITSE Labs</a></li>
+                    <li><a href="hackathons.html">Hackathon Experience</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <form id="feedbackForm" action="feedback.php">
+
+
+                <h3>Overall, how would you rank Keenul's web work? (1 = not that great, 5 = really good)</h3>
+                <div class="form-text">
+                <input type="radio" id="1" name="rank" value="1">
+                    <label for="1">1</label><br>
+                <input type="radio" id="2" name="rank" value="2">
+                    <label for="2">2</label><br>
+                <input type="radio" id="3" name="rank" value="3">
+                    <label for="3">3</label><br>
+                <input type="radio" id="4" name="rank" value="4">
+                    <label for="4">4</label><br>
+                <input type="radio" id="5" name="rank" value="5">
+                    <label for="5">5</label><br>
+                </div>
+
+                
+                <h3>What was your favorite project(s)? (refer to the titles of each project)</h3>
+                <div class="form-text">
+                <input type="checkbox" id="project1" name="project1" value="Week 2 Practice">
+                    <label for="project1">Week 2 Practice</label><br>
+                <input type="checkbox" id="project2" name="project2" value="Week 4 Practice">
+                    <label for="project2">Week 4 Practice</label><br>
+                <input type="checkbox" id="project3" name="project3" value="Week 9 Practice">
+                    <label for="project3">Week 9 Practice</label><br>
+                <input type="checkbox" id="project4" name="project4" value="Week 10 Practice">
+                    <label for="project4">Week 10 Practice</label><br>
+
+
+                <input type="checkbox" id="project5" name="project5" value="Lab 1 Assignment">
+                    <label for="project5">Lab 1 Assignment</label><br>
+                <input type="checkbox" id="project6" name="project6" value="Lab 2 Assignment">
+                    <label for="project6">Lab 2 Assignment</label><br>
+                <input type="checkbox" id="project7" name="project7" value="Lab 4 Assignment">
+                    <label for="project6">Lab 4 Assignment</label><br>
+                <input type="checkbox" id="project8" name="project8" value="Lab 6 Assignment">
+                    <label for="project6">Lab 6 Assignment</label><br>
+
+                <input type="checkbox" id="project9" name="project9" value="Hackathon Project">
+                    <label for="project6">Hackathon Project</label><br>
+                </div>
+
+
+                <h3>Please fill out the information below to get contacted for further inquiries.</h3>
+                <div class="form-text">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required> 
+                <label for="email">E-mail: </label>   
+                <input type="text" id="email" name="email" required>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+                </div>
+            </form>
+            
+        </main>
+        <footer>
+            Webmaster: Keenul Patel <br>
+            Last Updated: 5/14/21
+        </footer>
+    </body>
+</html>

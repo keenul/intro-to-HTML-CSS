@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Keenul's web programming experience">
+        <meta name="keywords" content="html, css, web programming">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <title>Keenul's Projects</title>
+        <script>
+            var myVar = setInterval(imageRandom, 2000)
+            function imageRandom() {
+                let randomNumber = Math.floor(Math.random() * 4) + 1
+                document.getElementById("check").innerHTML = randomNumber;
+                document.getElementById("swap_image").src = randomNumber + ".png";
+            }
+        </script>
+    </head> 
+    <body onload=imageRandom()>
+        <header>
+            <div class="header-container">
+            <h1>Keenul's Web Programming Experience</h1>
+            <h2>{Hackathon Experience}</h2>
+            <p>/* Keenul's application of web programming to a TechTogether Hackathon */</p>
+            </div>
+            <nav>
+                <ul class="flex_nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="practices.html">ITSE Practices</a></li>
+                    <li><a href="labs.html">ITSE Labs</a></li>
+                    <li><a href="hackathons.html">Hackathon Experience</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-container">
+            <h3>Keenul attended a hackathon, hosted by TechTogether Atlanta and worked with a partner to create a website/app solution for restaurants,
+                check out the video below to see what she created!
+            </h3>
+            <video id="video-hackathon" width="640" height="480" controls>
+                    <source src="AR.estaurantFinal.webm" type="video/webm">
+                    <source src="AR.estaurantFinal.mp4" type="video/mp4">
+                    <p>Link to video is <a href="AR.estaurantFinal.mp4">Hackathon Submission</a></p>
+            </video>
+        
+            <p>AR.estaurant is a digital menu for restaurants to provide to their customers,
+                 eliminating the use of physical menus that harbor millions of germs. This platform allows
+                 restaurants to upload 3D images of their dishes through an app 
+                check out the submission on <a href="https://devpost.com/software/ar-estaurant" target="_blank" rel="noopener noreferrer" alt="devpost">Devpost</a> to learn more about the project!</p>  
+
+            <section id="gallery-hackathons">
+                <h2>Gallery</h2>
+                <figure><img class="image-assignments" id="swap_image" src="default.png" alt="hackathon"></figure>
+                <p id="check"></p>
+            </section>
+        
+        </main>
+        <footer>
+            Webmaster: Keenul Patel <br>
+            Last Updated: 5/14/21
+        </footer>
+    </body>
+</html>

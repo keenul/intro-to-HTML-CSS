@@ -1,0 +1,189 @@
+/*CSS styling for index*/
+
+.image1-index {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.main-container {
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;  
+
+}
+
+.links-index {
+    text-align: center;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:link {
+    color: white;
+}
+
+main a:visited {
+    color:rgb(218, 72, 5);
+}
+
+main a:hover {
+    color: rgb(172, 9, 172);
+}
+
+
+/*CSS styling for survey*/
+
+.form-text {
+    color: white;
+    text-align: center;
+}
+
+/*CSS styling for hackathon*/
+#video-hackathon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+body {
+    background-image: url('codebackground.jpg');
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, p, footer {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color:rgb(218, 72, 5);
+}
+
+h3 {
+    color: rgb(14, 168, 189)
+}
+
+h4 {
+    text-align: left;
+    color:rgb(218, 72, 5)
+}
+
+
+
+.flex_nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding:0.5em;
+    background-color: black;
+    border-radius: .2em;
+    list-style-type: none;
+    text-align: center;
+}
+
+.flex_nav>li {
+    margin-top: 0;
+    flex: 1 1 auto;
+}
+
+.flex_nav>li>a {
+    display: block;
+    padding: .5em 1em;
+    background-color: rgb(218, 72, 5);
+    color:black;
+    text-decoration: none;
+}
+
+
+/*container for header*/
+.header-container {
+    background-color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em;   
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
+
+.assignment1 {
+    grid-row: 1;
+}
+
+.assignment2 {
+    grid-row: 2;
+}
+
+.assignment3 {
+    grid-row: 3;
+}
+
+.assignment4 {
+    grid-row: 4;
+}
+
+.image-assignments {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+@media only screen and (min-width: 1025px){
+    
+       #video-hackathon {
+           width: 100%;
+       }
+    
+}
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+
+        #video-hackathon {
+            width: 100%;
+        }
+     
+    }
+    
+    @media only screen and (max-width:600px) {
+
+        #video-hackathon {
+            width: 100%;
+        }
+    }
+
+    #gallery-hackathons > figure {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #gallery-hackatthons img {
+        max-width: 125%;
+        flex: 1;
+        object-fit:cover;
+    }
